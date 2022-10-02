@@ -7,7 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-    </form>
+    <Form onSubmit={submitHandler} >
+            <Form.Group controlId='email'>
+                <Form.Label>Email Address</Form.Label>
+                <Form.Control
+                    type='email'
+                    placeholder='Enter email'
+                    value={email}
+                ></Form.Control>
+            </Form.Group>
+
+            <Form.Group controlId='password'>
+                <Form.Label>Password</Form.Label>
+                <Form.Control
+                    type='password'
+                    placeholder='Enter password'
+                    value={password}
+                ></Form.Control>
+            </Form.Group>
+
+            <Button className='mt-3' type='submit' variant='dark'  >
+                Sign In
+            </Button>
+        </Form>
+
 </body>
 </html>
